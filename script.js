@@ -2,7 +2,14 @@ var dark = false
 
 window.onload = function () {
   document.getElementById('fancy').addEventListener('mouseover', function (e) {
-    console.log('test')
+    document.getElementById('fancy').style.borderBottom = 'blue solid 2px'
+    document.getElementById('fancy').style.borderTop = '#DCDCDC solid  2px'
+    document.getElementById('fancy').style.color = 'blue'
+  })
+
+  document.getElementById('fancy').addEventListener('mouseout', function (e) {
+    document.getElementById('fancy').style.border = 'white'
+    document.getElementById('fancy').style.color = 'grey'
   })
 }
 

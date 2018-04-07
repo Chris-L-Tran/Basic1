@@ -127,6 +127,16 @@ a{
   background: #DCDCDC;
 }
 
+#fancy {
+  background: white;
+  color: grey;
+  width: 100%;
+  height: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 0 3px 0;
+}
 .fancy-button {
   background:white;
   height: 25px;
