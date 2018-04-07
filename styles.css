@@ -6,6 +6,32 @@ p{
   background: orange;
 }
 
+#fill-container {
+  width: 15px;
+  height: 50px;
+  border: silver 3px solid;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+.container-per {
+  background: orange;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+#fill-button {
+  background: #E3E2B7;
+  width: 80px;
+  height: 20px;
+  border: grey 2px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
 #home{
   grid-column-start: 1;
   grid-row-start: 1;
@@ -18,9 +44,13 @@ p{
 
 #button1 {
   grid-column-start: 3;
-  grid-row-start: 3;
+  grid-row-start: 2;
 }
 
+.filler-container {
+  display: flex;
+  flex-flow: column;
+}
 a{
   text-decoration: none;
   color: blue;

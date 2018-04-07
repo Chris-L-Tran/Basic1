@@ -1,5 +1,8 @@
 var dark = false
 
+var fillammount = 0;
+var filled = false;
+
 window.onload = function () {
   document.getElementById('fancy').addEventListener('mouseover', function (e) {
     document.getElementById('fancy').style.borderBottom = 'blue solid 2px'
@@ -12,6 +15,14 @@ window.onload = function () {
     document.getElementById('fancy').style.border = 'white'
     document.getElementById('fancy').style.color = 'grey'
     document.getElementById('nav-icon').style.visibility = 'hidden'
+  })
+
+  document.getElementById('fill-button').addEventListener('click', function (e) {
+    switch (fillammount) {
+      case 0:
+        console.log(fillammount)
+        break
+    }
   })
 }
 
