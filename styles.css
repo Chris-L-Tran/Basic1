@@ -123,6 +123,17 @@ a{
   flex-flow: column;
 }
 
+#button5 {
+  background: #DCDCDC;
+}
+
+.fancy-button {
+  background:white;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .bottom-arrows{
   display:flex;
   flex-flow: row;
