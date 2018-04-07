@@ -22,10 +22,19 @@
       <p>Different Buttons</p>
       <div class='buttons-container'>
         <div class='button' id='button1'>
-          Enter color: 
-            <input type='text' name='color' id='background-color-input'>
-          <button onclick='changeBackground()'>Change Background</a>
+          Enter color:
+            <input type='text' name='color' id='background-color-input' onsubmit='changeBackground()'>
+          <button onclick='changeBackground()'>Change Background</button>
         </div>
+
+        <div class='button' id='button2'>
+          <button onclick='toggleColors()'>Toggle Colors</button>
+        </div>
+
+        <div class=button id='button3'>
+          <button onClick='showTime()'>Show time</button>
+        </div>
+
       </div>
     </div>
 

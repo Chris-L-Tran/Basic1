@@ -25,6 +25,11 @@ a{
   text-decoration: none;
 }
 
+#background-color-input {
+  max-width: 100px;
+  width: inherit;
+  padding: 0px 15 0 15px;
+}
 .button {
   height: 100px;
   display: flex;
