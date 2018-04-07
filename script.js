@@ -23,11 +23,10 @@ function showTime() {
     hours = hours - 12
   }
   var minutes = now.getMinutes()
-  alert(hours + " : " + minutes)
+  alert(hours + ' : ' + minutes)
 }
 
 document.addEventListener('keydown', function (e) {
-  console.log(e.keyCode)
   if (e.keyCode === 37) {
     document.getElementById('left-arrow').style.background = 'yellow'
   }
@@ -40,7 +39,6 @@ document.addEventListener('keydown', function (e) {
   if (e.keyCode === 40) {
     document.getElementById('down-arrow').style.background = 'yellow'
   }
-
 })
 
 document.addEventListener('keyup', function (e) {
