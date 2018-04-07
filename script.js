@@ -5,11 +5,13 @@ window.onload = function () {
     document.getElementById('fancy').style.borderBottom = 'blue solid 2px'
     document.getElementById('fancy').style.borderTop = '#DCDCDC solid  2px'
     document.getElementById('fancy').style.color = 'blue'
+    document.getElementById('nav-icon').style.visibility = 'visible'
   })
 
   document.getElementById('fancy').addEventListener('mouseout', function (e) {
     document.getElementById('fancy').style.border = 'white'
     document.getElementById('fancy').style.color = 'grey'
+    document.getElementById('nav-icon').style.visibility = 'hidden'
   })
 }
 
