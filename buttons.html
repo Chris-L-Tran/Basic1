@@ -3,6 +3,7 @@
 <head>
   <link rel='stylesheet' href='styles.css' >
   <script src ='script.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <div class='body'>
@@ -15,12 +16,15 @@
     <div class='right-panel'>This is space for the right panel</div>
     <div class='left-panel'>This is space for the left panel</div>
 
-    <div class='contents'>
+    <div class='contents' id='button-background'>
       <div class='title'><h1>This is a page where I practice different button techniques.</h1></div>
 
+      <p>Different Buttons</p>
       <div class='buttons-container'>
         <div class='button' id='button1'>
-          <a href='#'>A button</a>
+          Enter color: 
+            <input type='text' name='color' id='background-color-input'>
+          <button onclick='changeBackground()'>Change Background</a>
         </div>
       </div>
     </div>

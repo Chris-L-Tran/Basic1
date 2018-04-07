@@ -16,6 +16,30 @@ p{
   grid-row-start: 1;
 }
 
+#button1 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button {
+  height: 100px;
+  display: flex;
+  flex-flow:wrap;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+}
+
+.buttons-container{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
 .content-button {
   background: silver;
   height: 100px;
