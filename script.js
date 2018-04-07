@@ -1,7 +1,7 @@
 var dark = false
 
-var fillammount = 0;
-var filled = false;
+var fillamount = 0
+var filled = false
 
 window.onload = function () {
   document.getElementById('fancy').addEventListener('mouseover', function (e) {
@@ -18,10 +18,53 @@ window.onload = function () {
   })
 
   document.getElementById('fill-button').addEventListener('click', function (e) {
-    switch (fillammount) {
-      case 0:
-        console.log(fillammount)
-        break
+    if (filled === true) {
+      document.getElementById('fill-button').innerHTML = 'Fill'
+      document.getElementById('container7').style.visibility = 'hidden'
+      document.getElementById('container6').style.visibility = 'hidden'
+      document.getElementById('container5').style.visibility = 'hidden'
+      document.getElementById('container4').style.visibility = 'hidden'
+      document.getElementById('container3').style.visibility = 'hidden'
+      document.getElementById('container2').style.visibility = 'hidden'
+      document.getElementById('container1').style.visibility = 'hidden'
+      filled = false
+      return
+    }
+
+    if (filled !== true) {
+      switch (fillamount) {
+        case 0:
+          document.getElementById('container7').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+        case 1:
+          document.getElementById('container6').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+        case 2:
+          document.getElementById('container5').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+
+        case 3:
+          document.getElementById('container4').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+        case 4:
+          document.getElementById('container3').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+        case 5:
+          document.getElementById('container2').style.visibility = 'visible'
+          fillamount = fillamount + 1
+          break
+        case 6:
+          document.getElementById('container1').style.visibility = 'visible'
+          fillamount = 0
+          filled = true
+          document.getElementById('fill-button').innerHTML = 'Empty'
+          break
+      }
     }
   })
 }

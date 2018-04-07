@@ -32,6 +32,10 @@ p{
   justify-content: center;
 }
 
+#fill-button:hover {
+  cursor: pointer;
+}
+
 #home{
   grid-column-start: 1;
   grid-row-start: 1;
