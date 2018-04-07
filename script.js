@@ -25,3 +25,35 @@ function showTime() {
   var minutes = now.getMinutes()
   alert(hours + " : " + minutes)
 }
+
+document.addEventListener('keydown', function (e) {
+  console.log(e.keyCode)
+  if (e.keyCode === 37) {
+    document.getElementById('left-arrow').style.background = 'yellow'
+  }
+  if (e.keyCode === 38) {
+    document.getElementById('up-arrow').style.background = 'yellow'
+  }
+  if (e.keyCode === 39) {
+    document.getElementById('right-arrow').style.background = 'yellow'
+  }
+  if (e.keyCode === 40) {
+    document.getElementById('down-arrow').style.background = 'yellow'
+  }
+
+})
+
+document.addEventListener('keyup', function (e) {
+  if (e.keyCode === 37) {
+    document.getElementById('left-arrow').style.background = 'white'
+  }
+  if (e.keyCode === 38) {
+    document.getElementById('up-arrow').style.background = 'white'
+  }
+  if (e.keyCode === 39) {
+    document.getElementById('right-arrow').style.background = 'white'
+  }
+  if (e.keyCode === 40) {
+    document.getElementById('down-arrow').style.background = 'white'
+  }
+})

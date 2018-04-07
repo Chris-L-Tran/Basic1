@@ -31,6 +31,103 @@ a{
   width: inherit;
   padding: 0px 15 0 15px;
 }
+
+#left-arrow {
+  border: solid 2px black;
+  padding: 3px;
+  display: flex;
+  justify-content:center;
+}
+
+#left-point {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid black;
+}
+
+#left-body {
+  width: 10px;
+  height:20px;
+  background: black;
+}
+
+#up-arrow {
+  border: solid 2px black;
+  padding: 3px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#up-point {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+#up-body {
+  width: 20px;
+  height:10px;
+  background: black;
+}
+
+#down-arrow {
+  border: solid 2px black;
+  padding: 3px;
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+}
+
+#down-point {
+  width: 0;
+  height: 0;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+#down-body {
+  width: 20px;
+  height:10px;
+  background: black;
+}
+
+#right-arrow {
+  display: flex;
+  justify-content: center;
+  border: solid 2px black;
+  padding: 3px;
+}
+
+#right-point {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+}
+
+#right-body {
+  width: 10px;
+  height:20px;
+  background: black;
+}
+
+#button4 {
+  display: flex;
+  flex-flow: column;
+}
+
+.bottom-arrows{
+  display:flex;
+  flex-flow: row;
+}
+
 .button {
   height: 100px;
   display: flex;
