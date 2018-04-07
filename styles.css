@@ -5,7 +5,39 @@
 }
 
 .contents {
-  grid-row-start: 1;
+  grid-row-start: 2 ;
   grid-column-start:2;
 
+}
+
+.right-panel{
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end: 4;
+  background:green;
+
+}
+.left-panel{
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start:1;
+  grid-column-end: 2;
+  background: purple;
+
+}
+
+.footer {
+  grid-column-start:1;
+  grid-column-end:4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: cyan;
+}
+.header {
+  background: red;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
